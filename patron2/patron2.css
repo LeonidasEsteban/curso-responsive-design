@@ -1,0 +1,48 @@
+/*colores
+celeste claro = #C3E5F9
+celeste oscuro = #12A89D
+rojo = #B30F2A
+azul = #1C4583
+*/
+*{margin:0;}
+body{
+	background:#C3E5F9;
+	color:white;
+	font-size:16px;
+	font-family:Arial;
+	text-shadow:1px 1px 0 black;
+}
+img{
+	height:auto;
+	width:100%;
+}
+section{
+	width:30%;
+	float:left;
+}
+.columna1{
+	background:#12A89D;
+}
+
+.columna2{
+	background:#B30F2A;
+	width:40%;
+}
+.columna3{
+	background:#1C4583;
+}
+
+@media screen and (max-width:800px){
+	.columna2{
+		width:70%;
+	}
+	.columna3{
+		width:100%;
+	}
+}
+
+@media screen and (max-width:480px){
+	section{
+		width:100% !important;
+	}
+}
