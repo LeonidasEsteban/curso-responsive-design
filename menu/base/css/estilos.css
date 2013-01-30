@@ -1,0 +1,44 @@
+body{
+	color:black;
+	background: lightgray;
+	font-family: Arial;
+	font-size:16px;
+	margin: 0;
+}
+
+#menu{
+	max-width: 1000px;
+	background: peru;
+	margin:0 auto;
+	text-align: center;
+	padding: 20px 0;
+}
+#menu ul{
+	padding: 0;
+}
+#menu ul li{
+	/*float:left;*/
+	display:inline-block;
+	list-style: none;
+	padding:10px;
+	background:gray;
+	margin:10px;
+	width: 130px;
+}
+#menu ul li:last-child{
+	width: 150px;
+}
+#menu ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+@media screen and (max-width:480px){
+
+	#menu ul li{
+		display:block;	
+		width:auto !important;
+	}
+
+	
+}
