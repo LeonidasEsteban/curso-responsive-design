@@ -5,7 +5,11 @@ body{
 	font-size:16px;
 	margin: 0;
 }
-
+#mm0{
+	height: 50px;
+	border:1px solid black;
+	width: 90%;
+}
 #menu{
 	max-width: 1000px;
 	background: peru;
@@ -24,6 +28,23 @@ body{
 	background:gray;
 	margin:10px;
 	width: 130px;
+	position: relative;
+}
+#menu ul li:hover ul{
+	display:block;
+}
+#menu ul li ul{
+	position: absolute;
+	top:100%;
+	text-align: left;
+	left:0;
+	display:none;
+}
+#menu ul li ul li{
+	margin:0;
+}
+#menu ul li ul li:hover{
+	background: black;
 }
 #menu ul li:last-child{
 	width: 150px;
