@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout Shifter</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <style>
+        .Shifter{
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+        .Shifter-top{
+            background: red;
+        }
+        .Shifter-bottom{
+            background: blue;
+            font-size: 0;
+            padding: 20px 0;
+        }
+        .Shifter-column{
+            background: orange;
+            display: inline-block;
+            font-size: 16px;
+            width: 50%;
+        }
+        @media screen and (max-width: 1024px){
+            .Shifter{
+                max-width: 700px;
+            }
+        }
+        @media screen and (max-width: 767px){
+            .Shifter{
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="Shifter">
+        <div class="Shifter-top">
+            <h1>Layout Shifter</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error cum harum cumque aliquid alias. Explicabo minus voluptatem quasi suscipit! Distinctio culpa quae esse, nisi sunt, assumenda. Ad a natus, beatae?
+        </div>
+        <div class="Shifter-bottom">
+            <div class="Shifter-column">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos accusantium commodi est nihil magni sunt, rerum sed modi suscipit rem quidem itaque quis nemo voluptates ratione maxime dolores quas saepe.
+            </div>
+            <div class="Shifter-column">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque voluptatem ipsum excepturi perferendis maiores perspiciatis accusantium. Itaque distinctio soluta voluptates, eos dolor beatae accusantium nostrum ducimus dolore, voluptatibus corporis, est.
+            </div>
+        </div>
+    </section>
+</body>
+</html>

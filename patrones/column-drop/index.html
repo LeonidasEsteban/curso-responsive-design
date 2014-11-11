@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Column Drop</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <style>
+        .ColumnDrop-Column{
+            width: 25%;
+            float:left;
+        }
+        .orange{
+            background: orange;
+        }
+        .blue {
+            background: blue;
+        }
+        .pink {
+            background: pink;
+        }
+        .green { 
+            background: green;
+        }
+        @media screen and (max-width: 768px){
+            .ColumnDrop-Column{
+                width: 50%;
+                box-sizing: border-box;
+                border: 10px solid black;
+                
+            }
+        }
+        @media screen and (max-width: 767px){
+            .ColumnDrop-Column{
+                width: auto;
+                float: none;
+                border: 10px solid black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="ColumnDrop">
+        <div class="ColumnDrop-Column blue">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, error laborum perferendis similique quis, mollitia quisquam numquam. Hic libero dolore, veniam aperiam aspernatur minima sapiente fugiat. Praesentium nulla optio, laudantium.
+        </div>
+        <div class="ColumnDrop-Column orange">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, error laborum perferendis similique quis, mollitia quisquam numquam. Hic libero dolore, veniam aperiam aspernatur minima sapiente fugiat. Praesentium nulla optio, laudantium.
+        </div>
+        <div class="ColumnDrop-Column green">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, error laborum perferendis similique quis, mollitia quisquam numquam. Hic libero dolore, veniam aperiam aspernatur minima sapiente fugiat. Praesentium nulla optio, laudantium.
+        </div>
+        <div class="ColumnDrop-Column pink">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, error laborum perferendis similique quis, mollitia quisquam numquam. Hic libero dolore, veniam aperiam aspernatur minima sapiente fugiat. Praesentium nulla optio, laudantium.
+        </div>
+    </section>
+</body>
+</html>

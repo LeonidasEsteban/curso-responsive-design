@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mostly Fluid</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+
+    <style>
+        .Mostly{
+            background: lightgray;
+            max-width: 1024px;
+            margin: 0 auto;
+
+        }
+        .Mostly-column{
+            float : left;
+            width : 50%;
+        }
+        .Mostly-row {
+            overflow: hidden;
+        }
+        @media screen and (max-width: 767px){
+            .Mostly-column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="Mostly">
+        <div class="Mostly-row">
+            <h1>montly fluid</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ipsa odit cumque voluptate delectus earum numquam dignissimos provident doloremque, similique soluta dolorum commodi atque obcaecati, voluptatibus eaque error nisi unde.
+        </div>
+        <div class="Mostly-row">
+            <div class="Mostly-column">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nulla, quos tenetur. Eligendi sed maiores voluptatem magnam nesciunt laborum consequuntur molestias doloribus unde quibusdam minima sint, omnis repellendus quaerat odit!
+            </div>
+            <div class="Mostly-column">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ipsa repudiandae, dolorum repellat facere adipisci, doloremque a magnam porro quibusdam ipsam, atque repellendus, ratione velit ducimus et animi fuga dolorem.
+            </div>
+        </div>
+    </section>
+</body>
+</html>
