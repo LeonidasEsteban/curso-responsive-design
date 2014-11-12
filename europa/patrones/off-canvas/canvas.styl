@@ -1,0 +1,66 @@
+body
+    overflow hidden
+.Canvas
+    &-top
+        background #141F23
+        overflow hidden
+        color white
+        padding 0 20px
+    &-sidebar
+        width 200px
+        position absolute
+        right -200px
+        top 0
+        -webkit-transition .3s
+        &.is-active
+            right 0
+.Header
+    &-activeMenu
+        position absolute
+        right 20px
+        top 20px
+        background orange
+        border none
+        padding 10px
+        border-radius 10px
+        display none
+        &.is-active
+            display block
+.MainMenu
+    background #141F23
+    width 200px
+    position absolute 
+    left -200px
+    -webkit-transition .3s
+    top 0
+    padding 0
+    &.is-active
+        left 0
+    &-item
+        height 50px
+        line-height 50px
+        list-style none
+        text-align center
+        padding 0 20px
+        &:hover
+            background #0E0F0F
+    &-link
+        color white
+        text-decoration none
+        display block
+        text-transform uppercase
+        font-size 14px
+        font-weight bold
+        
+            
+
+@media screen and (min-width: 769px)
+    .Header
+        &-activeMenu
+            display none
+    .MainMenu
+        width auto
+        left initial
+        right 0
+        &-item
+            display inline-block

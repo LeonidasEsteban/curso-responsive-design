@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Off Canvas</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="../../../assets/css/base.css">
+    <link rel="stylesheet" href="canvas.css"/>
+
+</head>
+<body>
+    <section class="Canvas">
+        <div class="Canvas-top verde_A ">
+            <header class="Header">
+                <h1>Off canvas</h1>
+                <button class="Header-activeMenu is-active" id="activemenu">abrir menu</button>
+                <button class="Header-activeMenu" id="hidemenu">cerrar menu</button>
+            </header>
+            <ul class="MainMenu" id="menu">
+                <li class="MainMenu-item">
+                    <a href="" class="MainMenu-link">Cursos</a>
+                </li>
+                <li class="MainMenu-item">
+                    <a href="" class="MainMenu-link">Eventos</a>
+                </li>
+                <li class="MainMenu-item">
+                    <a href="" class="MainMenu-link">Clases</a>
+                </li>
+                <li class="MainMenu-item">
+                    <a href="" class="MainMenu-link">Inicia sesion</a>
+                </li>
+            </ul>
+        </div>
+        <div class="Canvas-main verde_B">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum eveniet optio distinctio porro, molestias reprehenderit fuga commodi debitis. Fugit iure, numquam quod laudantium dignissimos totam laborum laboriosam expedita similique ab.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi amet debitis maiores enim minima distinctio unde similique dolor voluptas accusantium aspernatur harum quae natus sequi deserunt suscipit quibusdam, soluta architecto.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro repellat est vel iure dolor sint! Quo molestias eligendi tempora sequi amet qui pariatur unde! Sequi perspiciatis porro voluptates nisi facere!
+        </div>
+        <div class="Canvas-sidebar verde_C">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum magni est repudiandae sapiente eveniet magnam eaque fugit quaerat, beatae necessitatibus deleniti, aliquid nam impedit nihil aliquam voluptas libero rem illum.
+        </div>
+    </section>
+    <script src="hammer.min.js"></script>
+    <script>
+        var $activeButton = document.getElementById('activemenu');
+        var $hideButton = document.getElementById('hidemenu');
+        var $menu = document.getElementById('menu');
+        var $body = document.querySelector('body');
+
+        var body = new Hammer($body);
+
+
+
+
+        var activeMenu = function(){
+            $activeButton.classList.remove('is-active');
+            $hideButton.classList.add('is-active');
+            $menu.classList.add('is-active');
+        }
+
+        var hideMenu = function(){
+            $activeButton.classList.add('is-active');
+            $hideButton.classList.remove('is-active');
+            $menu.classList.remove('is-active');
+        }
+
+        $activeButton.addEventListener('click', activeMenu);
+        $hideButton.addEventListener('click', hideMenu);
+        
+        body.on('panright', activeMenu);
+        body.on('panleft', hideMenu);
+    </script>
+</body>
+</html>
