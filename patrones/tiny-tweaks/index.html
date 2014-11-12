@@ -8,6 +8,7 @@
     <style>
         .Tweaks{
             max-width: 768px;
+            background: red;
             margin: 0 auto;
             text-align: center;
             font-size: 16px;
@@ -21,20 +22,41 @@
         .Tweaks-bio {
             font-size: 2em;
         }
+        .Tweaks-image{
+            width: auto;
+            max-width: 100%;
+            height: auto;
+        }
+        p {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        p:first-child {
+            font-size: 20px;
+        }
+
         @media screen and (max-width: 767px){
             .Tweaks{
                 font-size: 8px;
             }
-
+            p {
+                font-size: 15px !important;
+            }
+/*
             .Tweaks-image{
                 width: 100%;
                 height: auto;
-            }
+            }*/
         }
     </style>
 </head>
 <body>
+    <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia voluptate deleniti fugiat modi dignissimos, alias voluptatum eaque. Quia expedita, suscipit. Facere officiis, in doloribus placeat eaque ratione consequatur asperiores atque.</p>
+    <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia voluptate deleniti fugiat modi dignissimos, alias voluptatum eaque. Quia expedita, suscipit. Facere officiis, in doloribus placeat eaque ratione consequatur asperiores atque.</p>
+    <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia voluptate deleniti fugiat modi dignissimos, alias voluptatum eaque. Quia expedita, suscipit. Facere officiis, in doloribus placeat eaque ratione consequatur asperiores atque.</p>
+
     <section class="Tweaks">
+
         <h1 class="Tweaks-name">Leonidas Esteban</h1>
         <h2 class="Tweaks-twitter">@LeonidasEsteban</h2>
         <img src="leonidas.jpg" class="Tweaks-image" width="250" height="250">

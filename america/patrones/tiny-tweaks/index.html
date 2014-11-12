@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiny Tweaks</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="../../../assets/css/base.css">
+    <style>
+        .Tweaks{
+            max-width: 768px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 16px;
+        }
+        .Tweaks-name,
+        .Tweaks-title
+        {
+            font-size: 5em;
+        }
+        .Tweaks-username{
+            font-size: 2.5em;
+        }
+        .Tweaks-bio{
+            font-size: 2em;
+        }
+        /*.Tweaks-image{
+
+        }
+*/
+        @media screen and (max-width: 767px){
+            .Tweaks{
+                font-size: 8px;
+            }
+            .Tweaks-image{
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Tweaks">
+        <h1 class="Tweaks-name">Leonidas Esteban</h1>
+        <h2 class="Tweaks-username">@LeonidasEsteban</h2>
+        <img src="leonidas.jpg" width="250" height="250" class="Tweaks-image"/>
+        <h1 class="Tweaks-title">Tiny Tweaks</h1>
+        <p class="Tweaks-bio">
+            Hola! me llamo Leonidas y soy el Frontend de Mejorando.la. Tambien doy cursos y consultoria a quien confie en mis habilidades.
+        </p>
+    </div>
+</body>
+</html>

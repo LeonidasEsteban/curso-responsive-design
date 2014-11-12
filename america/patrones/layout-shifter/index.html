@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout Shifter</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="../../../assets/css/base.css">
+    <style>
+        .Shifter{
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+        .Shifter-top{
+            margin-bottom: 20px;
+        }
+        .Shifter-bottom{
+            padding: 20px 0;
+            overflow: hidden;
+        }
+        .Shifter-column{
+            width: 50%;
+            float: left;
+        }
+
+        @media screen and (max-width: 1024px){
+            .Shifter{
+                max-width: 900px;
+            }
+        }
+
+        @media screen and (max-width: 768px){
+            .Shifter{
+                max-width: 600px;
+            }
+        }
+
+        @media screen and (max-width: 767px){
+            .Shifter{
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="Shifter">
+        <div class="Shifter-top verde_A">
+            <h1>Layout Shifter</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ratione, cumque sed deleniti sunt, soluta nisi harum laborum rerum earum corporis eligendi quaerat ipsa doloribus voluptatum ipsam, saepe architecto optio.
+        </div>
+        <div class="Shifter-bottom verde_B">
+            <div class="Shifter-column verde_A">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis iusto doloremque, architecto similique est dicta tenetur cum, repellat perferendis nulla impedit recusandae consectetur deleniti sequi quasi dolorum ipsam unde. Excepturi.
+            </div>
+            <div class="Shifter-column verde_C">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id eius repudiandae incidunt assumenda accusamus ut est. Itaque nisi quam iure sit officia, dolor porro architecto ex beatae officiis earum, saepe.
+            </div>
+        </div>
+    </section>
+</body>
+</html>
