@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Off Canvas</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="../../../assets/css/base.css">
+    <link rel="stylesheet" href="canvas.css?v=1.0"/>
+</head>
+<body>
+    <section class="Canvas">
+        <header class="Header verde_A is-active">
+            <h1 class="Header-logo">Off canvas</h1>
+            <button class="Header-button is-active" id="showMenu">Mostrar menú</button>
+            <button class="Header-button" id="hideMenu">Ocultar menú</button>
+
+            <ul class="MainMenu" id="menu">
+                <li class="MainMenu-item">
+                    <a href="" class="MainMenu-link">
+                        Cursos
+                    </a>
+                </li>
+                <li class="MainMenu-item">
+                    <a href="" class="MainMenu-link">
+                        Conferencias
+                    </a>
+                </li>
+                <li class="MainMenu-item">
+                    <a href="" class="MainMenu-link">
+                        Eventos
+                    </a>
+                </li>
+                <li class="MainMenu-item">
+                    <a href="" class="MainMenu-link">
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <div class="Canvas-main verde_B">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quis enim earum similique, illo nesciunt, adipisci, quibusdam aspernatur sapiente corporis, sit nemo quo non veritatis aliquam modi. Odit, debitis, illum!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quibusdam illum doloribus omnis tenetur nisi laborum ipsum, vero obcaecati accusamus, quae, consequuntur placeat quos aliquid voluptate reiciendis ex quasi facilis.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quis enim earum similique, illo nesciunt, adipisci, quibusdam aspernatur sapiente corporis, sit nemo quo non veritatis aliquam modi. Odit, debitis, illum!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quibusdam illum doloribus omnis tenetur nisi laborum ipsum, vero obcaecati accusamus, quae, consequuntur placeat quos aliquid voluptate reiciendis ex quasi facilis.
+        </div>
+        <div class="Canvas-sidebar verde_C">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum rerum nemo facilis dolorum illo aliquid deserunt omnis. Corporis ullam qui voluptatibus eaque, maiores cupiditate similique, in a, nisi aspernatur, maxime.
+        </div>
+    </section>
+    <script src="hammer.min.js"></script>
+    <script>
+        var $buttonShowMenu = document.getElementById('showMenu');
+        var $buttonHideMenu = document.getElementById('hideMenu');
+        var $menu = document.getElementById('menu');
+        
+        var $body = document.querySelector('body');
+
+        var body = new Hammer($body);
+
+
+        var showMenu = function(){
+            $buttonShowMenu.classList.remove('is-active');
+            $buttonHideMenu.classList.add('is-active');
+            $menu.classList.add('is-active');
+        }
+
+        var hideMenu = function(){
+            $buttonShowMenu.classList.add('is-active');
+            $buttonHideMenu.classList.remove('is-active');
+            $menu.classList.remove('is-active');
+        }
+
+        $buttonShowMenu.addEventListener("click", showMenu);
+
+        $buttonHideMenu.addEventListener("click", hideMenu);
+
+        body.on('panright', showMenu)
+        body.on('panleft', hideMenu)
+    </script>
+</body>
+</html>
